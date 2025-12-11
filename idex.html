@@ -1,11 +1,120 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pagina Web</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </head>
+  <body class="bg-gray-100">
+    <nav
+      class="bg-gradient-to-r from-violet-600 via-indigo-600 to-purple-600 shadow-lg sticky top-0 z-50"
+    >
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex items-center justify-between h-16">
+          <div class="flex-shrink-0">
+            <a
+              href="#"
+              class="text-white font-bold text-2xl tracking-wider flex items-center gap-2"
+            >
+              <svg
+                class="w-8 h-8 text-yellow-300"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M13 10V3L4 14h7v7l9-11h-7z"
+                ></path>
+              </svg>
+              MiMarca
+            </a>
+          </div>
+
+          <div class="hidden md:block">
+            <div class="ml-10 flex items-baseline space-x-4">
+              <a
+                href="#"
+                class="text-white hover:bg-white/20 px-3 py-2 rounded-md text-sm font-medium transition duration-300"
+                >Inicio</a
+              >
+              <a
+                href="#"
+                class="text-gray-200 hover:text-white hover:bg-white/20 px-3 py-2 rounded-md text-sm font-medium transition duration-300"
+                >Servicios</a
+              >
+              <a
+                href="#"
+                class="text-gray-200 hover:text-white hover:bg-white/20 px-3 py-2 rounded-md text-sm font-medium transition duration-300"
+                >Blog</a
+              >
+
+              <a
+                href="#"
+                class="bg-white text-indigo-600 hover:bg-gray-100 hover:shadow-xl px-4 py-2 rounded-full text-sm font-bold transition duration-300 transform hover:-translate-y-0.5"
+              >
+                Registrarse
+              </a>
+            </div>
+          </div>
+
+          <div class="-mr-2 flex md:hidden">
+            <button
+              type="button"
+              onclick="document.getElementById('mobile-menu').classList.toggle('hidden')"
+              class="bg-indigo-600 inline-flex items-center justify-center p-2 rounded-md text-gray-200 hover:text-white hover:bg-indigo-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-indigo-600 focus:ring-white"
+            >
+              <span class="sr-only">Abrir menú</span>
+              <svg
+                class="h-6 w-6"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h16M4 18h16"
+                />
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="hidden md:hidden bg-indigo-700/90 backdrop-blur-sm"
+        id="mobile-menu"
+      >
+        <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+          <a
+            href="#"
+            class="text-white hover:bg-indigo-500 block px-3 py-2 rounded-md text-base font-medium"
+            >Inicio</a
+          >
+          <a
+            href="#"
+            class="text-gray-300 hover:text-white hover:bg-indigo-500 block px-3 py-2 rounded-md text-base font-medium"
+            >Servicios</a
+          >
+          <a
+            href="#"
+            class="text-gray-300 hover:text-white hover:bg-indigo-500 block px-3 py-2 rounded-md text-base font-medium"
+            >Blog</a
+          >
+          <a
+            href="#"
+            class="bg-white text-indigo-600 block px-3 py-2 rounded-md text-base font-bold mt-4 text-center"
+            >Registrarse</a
+          >
+        </div>
+      </div>
+    </nav>
+    <h1>Mi página web</h1>
+  </body>
 </html>
